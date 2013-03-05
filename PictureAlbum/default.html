@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PictureAlbum</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- PictureAlbum references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/fullData.js"></script>
+
+    <script src="/flyouts/paketFlyout/paketFlyout.js"></script>
+    <link href="/flyouts/paketFlyout/paketFlyout.css" rel="stylesheet" />
+
+    <script src="/flyouts/duplikatiFlyout/duplikatFlyout.js"></script>
+    <link href="/flyouts/duplikatiFlyout/duplikatFlyout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+        <!-- OGNEN -->
+        
+        <!-- OGNEN -->
+
+        <div data-win-control="WinJS.UI.HtmlControl" data-win-options="{ uri: '/flyouts/paketFlyout/paketFlyout.html' }"></div>
+        <div data-win-control="WinJS.UI.HtmlControl" data-win-options="{ uri: '/flyouts/duplikatiFlyout/duplikatFlyout.html'}"></div>
+        <div id="appbar" data-win-control="WinJS.UI.AppBar" data-win-options="{ position: 'bottom'}" style="visibility: visible;">
+            <button id="btnPaket" data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{icon:'add', id:'btnPaket', label:'Земи нов пакет', section:'global', type:'flyout', flyout:'paketFlyout'}">
+            </button>
+            <button id="btnDuplikati" data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{icon:'viewall', id:'btnDuplikati', label:'Слики за менување', section:'global', type:'flyout', flyout:'duplikatFlyout'}">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

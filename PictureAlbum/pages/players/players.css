@@ -1,0 +1,58 @@
+﻿.players p {
+    margin-left: 120px;
+}
+
+.igracLV {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.igracGrid {
+    background-color: #0253A5;
+    display: -ms-grid;
+    -ms-grid-rows: 140px 20px 20px 20px;
+    -ms-grid-columns: 1fr;
+    padding: 5px;
+}
+
+.igracImg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    max-width: 200px;
+}
+
+.igracBroj {
+    -ms-grid-row: 2;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.igracPozicija {
+    -ms-grid-row: 3;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.igracIme {
+    -ms-grid-row: 4;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .igracGrid {
+        background-color: #0253A5;
+        display: -ms-grid;
+        -ms-grid-rows: 1fr 20px 20px 20px;
+        -ms-grid-columns: 1fr;
+        padding: 5px;
+    }
+
+    .igracImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 4;
+        min-width: 255px;
+    }
+}

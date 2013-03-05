@@ -1,0 +1,81 @@
+﻿body {
+}
+
+.flyout {
+    position:absolute;
+    height:300px;
+    margin-right: 10px;
+	margin-bottom:10px;
+}
+
+.picContainer{
+    display: -ms-grid;
+    height: 300px;
+    width:600px;
+}
+
+.btnImage {
+    /*background-color: green; */
+    float: left;
+}
+
+#btnClick1{
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+
+#btnClick2{
+	-ms-grid-row: 2;
+	-ms-grid-column: 4;
+}
+
+#btnClick3{
+	-ms-grid-row: 2;
+	-ms-grid-column: 6;
+}
+
+#btnClick4{
+	-ms-grid-row: 2;
+	-ms-grid-column: 8;
+}
+
+#btnClick5{
+	-ms-grid-row: 2;
+	-ms-grid-column: 10;
+}
+
+.btnDodadiSliki{
+	-ms-grid-column: 2;
+    -ms-grid-column-span:9;
+	-ms-grid-row: 4;
+	height:100%;
+	width:100%;
+}
+
+/*=================ЗА ListView ЗА СТАТИСТИКИ НА HOME СТРАНАТА=================*/
+.statsListView {
+	height:100%;
+}
+
+.stats {
+	display: -ms-grid;
+	-ms-grid-rows: 30px 30px 20px 445fr 45fr 168fr 30px;
+	-ms-grid-columns: 20px 1fr 20px;
+}
+
+.lista {
+	-ms-grid-row: 4;
+    -ms-grid-row-span:3;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
+}
+
+.naslov {
+	-ms-grid-row: 2; 
+	-ms-grid-column: 2;
+}
+
+.statsGrid {
+    padding: 10px;
+    background-color: rgba(91, 91, 91, 0.57);
+}

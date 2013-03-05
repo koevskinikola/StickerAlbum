@@ -1,0 +1,40 @@
+﻿.homepage section[role=main] {
+}
+
+.stats {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+    }
+	
+	.lista {
+	-ms-grid-row: 6;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
+}
+
+.naslov {
+	-ms-grid-row: 5; 
+	-ms-grid-column: 2;
+}
+
+.stats {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}

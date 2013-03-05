@@ -1,0 +1,67 @@
+﻿.proba_fragment {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.sect {
+    height: 100%;
+    width: 100%;
+    -ms-grid-row: 2;
+}
+
+.teamLV {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    height: 100%;
+}
+
+
+.timGrid {
+    background-color: #0253A5;
+    display: -ms-grid;
+    -ms-grid-rows: 400px 40px;
+    -ms-grid-columns: 1fr;
+}
+
+.teamImg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.teamName {
+    -ms-grid-row: 2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .teamLV {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        height: 100%;
+    }
+
+    .timGrid {
+        background-color: #0253A5;
+        display: -ms-grid;
+        -ms-grid-rows: 110px 40px;
+        -ms-grid-columns: 1fr;
+    }
+
+    .teamImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        min-width: 100px;
+    }
+
+    .teamName {
+        -ms-grid-row: 2;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.72);
+    }
+}

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/fullData.js"></script>
+
+    <script src="/flyouts/paketFlyout/paketFlyout.js"></script>
+    <link href="/flyouts/paketFlyout/paketFlyout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Вашите албуми со слики!</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" style="margin-top: 125px; margin-right: -3px; margin-bottom: 3px; -ms-grid-row-span: 2; -ms-grid-column-span: 2;">
+
+            <div id="duplikatiBar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'top', sticky:'true',layout:'custom'}">
+                <div id="doublesTemplate" class="doublesTemplate" data-win-control="WinJS.Binding.Template">
+                    <div class="doublesGrid">
+                        <img class="doubleImg" data-win-bind="src: slika" />
+                        <div class="doubleName">
+                            <h4 class="doubleIme" data-win-bind="innerHTML: ime"></h4>
+                            <h4 class="doubleTeam" data-win-bind="innerHTML: tim"></h4>
+                            Duplicates: <span class="doubleCount" data-win-bind="innerHTML: duplikati"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="doublesLV" class="doublesLV" data-win-control="WinJS.UI.ListView" data-win-options="{ selection: 'none' }">
+                </div>
+            </div>
+
+            <div class="mygrid">
+                <!-- NOTE: Add in data TEMPLATE -->
+                <div id="albumTemplate" class="albumTemplate" data-win-control="WinJS.Binding.Template">
+                    <div class="albumsGrid">
+                        <img class="albumImg" data-win-bind="src: slika" />
+
+                        <div class="albumName">
+                            <h2 data-win-bind="innerHTML: ime"></h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- NOTE: Add in List View -->
+                <div id="albumsListView" class="albumsListView" data-win-control="WinJS.UI.ListView"
+                    data-win-options="{  selectionMode: 'none'  }">
+                </div>
+            </div>
+        </section>
+
+        <div id="stats" class="stats">
+            <h2 class="naslov"><b>Ранк</b></h2>
+            <br />
+            <div id="lista" class="lista">
+                <!-- NOTE: Add in data TEMPLATE -->
+                <div id="statsTemplate" class="statsTemplate" data-win-control="WinJS.Binding.Template">
+                    <div class="statsGrid">
+                        <h3 class="imeTim" data-win-bind="innerHTML: rank"></h3>
+                        <h3 class="imeTim" data-win-bind="innerHTML: ime"></h3>
+                        <span class="pobediTim " data-win-bind="innerHTML: won"></span>
+                        <span class="poraziTim " data-win-bind="innerHTML: lost"></span>
+                    </div>
+                </div>
+                <!-- NOTE: Add in List View -->
+                <div id="statsListView" class="statsListView" data-win-control="WinJS.UI.ListView"
+                    data-win-options="{  selectionMode: 'none'  }">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

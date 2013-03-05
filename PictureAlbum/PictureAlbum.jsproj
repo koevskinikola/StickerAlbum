@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>7d5534ff-4442-4d86-8e23-e14b925bf301</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>PictureAlbum_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\default.css" />
+    <Content Include="flyouts\duplikatiFlyout\duplikatFlyout.css" />
+    <Content Include="flyouts\duplikatiFlyout\duplikatFlyout.html" />
+    <Content Include="flyouts\duplikatiFlyout\duplikatFlyout.js" />
+    <Content Include="flyouts\paketFlyout\paketFlyout.css" />
+    <Content Include="flyouts\paketFlyout\paketFlyout.html" />
+    <Content Include="flyouts\paketFlyout\paketFlyout.js" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\Blazers\aleksandar_pavlovic.jpg" />
+    <Content Include="images\Blazers\blazers_logo.jpg" />
+    <Content Include="images\Blazers\damian_lillard.jpg" />
+    <Content Include="images\Blazers\elliot_williams.png" />
+    <Content Include="images\Blazers\jared_jeffries.jpg" />
+    <Content Include="images\Blazers\jj_hickson.jpg" />
+    <Content Include="images\Blazers\joel_freeland.png" />
+    <Content Include="images\Blazers\lamarcus_aldridge.jpg" />
+    <Content Include="images\Blazers\luke_babbitt.jpg" />
+    <Content Include="images\Blazers\meyers_leonard.jpg" />
+    <Content Include="images\Blazers\nicolas_batum.jpg" />
+    <Content Include="images\Blazers\nolan_smith.jpg" />
+    <Content Include="images\Blazers\ronnie_price.jpg" />
+    <Content Include="images\Blazers\sasha_pavlovic.png" />
+    <Content Include="images\Blazers\victor_claver.png" />
+    <Content Include="images\Blazers\wesley_matthews.jpg" />
+    <Content Include="images\Blazers\will_barton.png" />
+    <Content Include="images\Clippers\blake_griffin.jpg" />
+    <Content Include="images\Clippers\caron_butler.jpg" />
+    <Content Include="images\Clippers\chauncey_billups.jpg" />
+    <Content Include="images\Clippers\chris_paul.jpg" />
+    <Content Include="images\Clippers\clippers_logo.png" />
+    <Content Include="images\Clippers\deandre_jordan.jpg" />
+    <Content Include="images\Clippers\eric_bledsoe.jpg" />
+    <Content Include="images\Clippers\grant_hill.jpg" />
+    <Content Include="images\Clippers\jamal_crawford.jpg" />
+    <Content Include="images\Clippers\lamar_odom.jpg" />
+    <Content Include="images\Clippers\matt_barnes.jpg" />
+    <Content Include="images\Clippers\ronny_turiaf.jpg" />
+    <Content Include="images\Clippers\ryan_hollins.jpg" />
+    <Content Include="images\Clippers\trey_thompkins.jpg" />
+    <Content Include="images\Clippers\willie_green.jpg" />
+    <Content Include="images\Grizzlies\darrell_arthur.jpg" />
+    <Content Include="images\Grizzlies\grizzlies_logo.jpg" />
+    <Content Include="images\Grizzlies\hamed_haddadi.jpg" />
+    <Content Include="images\Grizzlies\jerryd_bayless.jpg" />
+    <Content Include="images\Grizzlies\josh_selby.jpg" />
+    <Content Include="images\Grizzlies\marc_gasol.jpg" />
+    <Content Include="images\Grizzlies\marreese_speights.jpg" />
+    <Content Include="images\Grizzlies\mike_conley.jpg" />
+    <Content Include="images\Grizzlies\quincy_pondexter.jpg" />
+    <Content Include="images\Grizzlies\rudy_gay.jpg" />
+    <Content Include="images\Grizzlies\tony_allen.jpg" />
+    <Content Include="images\Grizzlies\tony_wroten.png" />
+    <Content Include="images\Grizzlies\wayne_ellington.jpg" />
+    <Content Include="images\Grizzlies\zach_randolph.jpg" />
+    <Content Include="images\Hornets\al-farouq_aminu.jpg" />
+    <Content Include="images\Hornets\anthony_davis.jpg" />
+    <Content Include="images\Hornets\austin_rivers.jpg" />
+    <Content Include="images\Hornets\brian_roberts.jpg" />
+    <Content Include="images\Hornets\darius_miller.jpg" />
+    <Content Include="images\Hornets\eric_gordon.jpg" />
+    <Content Include="images\Hornets\greivis_vasquez.jpg" />
+    <Content Include="images\Hornets\hornets_logo.jpg" />
+    <Content Include="images\Hornets\jason_smith.jpg" />
+    <Content Include="images\Hornets\lance_thomas.jpg" />
+    <Content Include="images\Hornets\robin_lopez.jpg" />
+    <Content Include="images\Hornets\roger_mason-jr.jpg" />
+    <Content Include="images\Hornets\ryan_j_anderson.jpg" />
+    <Content Include="images\Hornets\xavier_henry.jpg" />
+    <Content Include="images\Jazz\alec_burks.jpg" />
+    <Content Include="images\Jazz\al_jefferson.jpg" />
+    <Content Include="images\Jazz\demarre_carroll.jpg" />
+    <Content Include="images\Jazz\derrick_favors.jpg" />
+    <Content Include="images\Jazz\earl_watson.jpg" />
+    <Content Include="images\Jazz\enes_kanter.jpg" />
+    <Content Include="images\Jazz\gordon_hayward.jpg" />
+    <Content Include="images\Jazz\jamaal_tinsley.jpg" />
+    <Content Include="images\Jazz\jazz_logo.jpg" />
+    <Content Include="images\Jazz\jeremy_evans.jpg" />
+    <Content Include="images\Jazz\kevin_murphy.png" />
+    <Content Include="images\Jazz\marvin_williams.jpg" />
+    <Content Include="images\Jazz\maurice_williams.jpg" />
+    <Content Include="images\Jazz\paul_millsap.jpg" />
+    <Content Include="images\Jazz\raja_bell.jpg" />
+    <Content Include="images\Jazz\randy_foye.jpg" />
+    <Content Include="images\Kings\aaron_brooks.jpg" />
+    <Content Include="images\Kings\chuck_hayes.jpg" />
+    <Content Include="images\Kings\demarcus_cousins.jpg" />
+    <Content Include="images\Kings\francisco_garcia.jpg" />
+    <Content Include="images\Kings\isaiah_thomas.jpg" />
+    <Content Include="images\Kings\james_johnson.jpg" />
+    <Content Include="images\Kings\jason_thompson.jpg" />
+    <Content Include="images\Kings\jimmer_fredette.jpg" />
+    <Content Include="images\Kings\john_salmons.jpg" />
+    <Content Include="images\Kings\kings_logo.gif" />
+    <Content Include="images\Kings\marcus_thornton.jpg" />
+    <Content Include="images\Kings\thomas_robinson.jpg" />
+    <Content Include="images\Kings\travis_outlaw.jpg" />
+    <Content Include="images\Kings\tyler_honeycutt.jpg" />
+    <Content Include="images\Kings\tyreke_evans.jpg" />
+    <Content Include="images\Lakers\antawn_jamison.jpg" />
+    <Content Include="images\Lakers\chris_duhon.jpg" />
+    <Content Include="images\Lakers\darius_johnson-odom.jpg" />
+    <Content Include="images\Lakers\darius_morris.jpg" />
+    <Content Include="images\Lakers\devin_ebanks.jpg" />
+    <Content Include="images\Lakers\dwight_howard.jpg" />
+    <Content Include="images\Lakers\earl_clark.jpg" />
+    <Content Include="images\Lakers\jodie_meeks.jpg" />
+    <Content Include="images\Lakers\jordan_hill.jpg" />
+    <Content Include="images\Lakers\kobe_bryant.jpg" />
+    <Content Include="images\Lakers\logo.jpg" />
+    <Content Include="images\Lakers\metta_world_peace.jpg" />
+    <Content Include="images\Lakers\pau_gasol.jpg" />
+    <Content Include="images\Lakers\robert_sacre.jpg" />
+    <Content Include="images\Lakers\steve_blake.jpg" />
+    <Content Include="images\Lakers\steve_nash.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\Mavericks\bernard_james.jpg" />
+    <Content Include="images\Mavericks\brandan_wright.jpg" />
+    <Content Include="images\Mavericks\chris_kaman.jpg" />
+    <Content Include="images\Mavericks\dahntay_jones.jpg" />
+    <Content Include="images\Mavericks\darren_collison.jpg" />
+    <Content Include="images\Mavericks\dirk_nowitzki.jpg" />
+    <Content Include="images\Mavericks\dominique_jones.jpg" />
+    <Content Include="images\Mavericks\elton_brand.jpg" />
+    <Content Include="images\Mavericks\jae_crowder.jpg" />
+    <Content Include="images\Mavericks\jared_cunningham.jpg" />
+    <Content Include="images\Mavericks\mavericks.jpg" />
+    <Content Include="images\Mavericks\oj_mayo.jpg" />
+    <Content Include="images\Mavericks\rodrigue_beaubois.jpg" />
+    <Content Include="images\Mavericks\shawn_marion.jpg" />
+    <Content Include="images\Mavericks\troy_murphy.jpg" />
+    <Content Include="images\Mavericks\vince_carter.jpg" />
+    <Content Include="images\nba-logo.jpg" />
+    <Content Include="images\Nuggets\andre_iguodala.jpg" />
+    <Content Include="images\Nuggets\andre_miller.jpg" />
+    <Content Include="images\Nuggets\anthony_randolph.jpg" />
+    <Content Include="images\Nuggets\corey_brewer.jpg" />
+    <Content Include="images\Nuggets\danilo_gallinari.jpg" />
+    <Content Include="images\Nuggets\evan_fournier.jpg" />
+    <Content Include="images\Nuggets\javale_mcgee.jpg" />
+    <Content Include="images\Nuggets\jordan_hamilton.jpg" />
+    <Content Include="images\Nuggets\julyan_stone.jpg" />
+    <Content Include="images\Nuggets\kenneth_faried.jpg" />
+    <Content Include="images\Nuggets\kosta_koufos.jpg" />
+    <Content Include="images\Nuggets\nuggets_logo.gif" />
+    <Content Include="images\Nuggets\quincy_miller.jpg" />
+    <Content Include="images\Nuggets\timofey_mozgov.jpg" />
+    <Content Include="images\Nuggets\ty_lawson.jpg" />
+    <Content Include="images\Nuggets\wilson_chandler.jpg" />
+    <Content Include="images\Rockets\carlos_delfino.jpg" />
+    <Content Include="images\Rockets\chandler_parsons.jpg" />
+    <Content Include="images\Rockets\cole_aldrich.jpg" />
+    <Content Include="images\Rockets\daequan_cook.png" />
+    <Content Include="images\Rockets\donatas_motiejunas.png" />
+    <Content Include="images\Rockets\greg_smith.jpg" />
+    <Content Include="images\Rockets\james_harden.jpg" />
+    <Content Include="images\Rockets\jeremy_lin.jpg" />
+    <Content Include="images\Rockets\marcus_morris.jpg" />
+    <Content Include="images\Rockets\omer_asik.jpg" />
+    <Content Include="images\Rockets\patrick_patterson.jpg" />
+    <Content Include="images\Rockets\RocketsLogo.gif" />
+    <Content Include="images\Rockets\royce_white.jpg" />
+    <Content Include="images\Rockets\scott_machado.png" />
+    <Content Include="images\Rockets\terrence_jones.png" />
+    <Content Include="images\Rockets\toney_douglas.jpg" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\Spurs\boris_diaw.jpg" />
+    <Content Include="images\Spurs\cory_joseph.jpg" />
+    <Content Include="images\Spurs\daniel_green.jpg" />
+    <Content Include="images\Spurs\dejuan_blair.jpg" />
+    <Content Include="images\Spurs\emanuel_ginobili.jpg" />
+    <Content Include="images\Spurs\gary_neal.jpg" />
+    <Content Include="images\Spurs\james_anderson.jpg" />
+    <Content Include="images\Spurs\kawhi_leonard.jpg" />
+    <Content Include="images\Spurs\matt_bonner.jpg" />
+    <Content Include="images\Spurs\nando_de_colo.jpg" />
+    <Content Include="images\Spurs\patrick_mills.jpg" />
+    <Content Include="images\Spurs\spurs_logo.jpg" />
+    <Content Include="images\Spurs\stephen_jackson.jpg" />
+    <Content Include="images\Spurs\tiago_splitter.jpg" />
+    <Content Include="images\Spurs\tim_duncan.jpg" />
+    <Content Include="images\Spurs\tony_parker.jpg" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="images\Suns\channing_frye.jpg" />
+    <Content Include="images\Suns\diante_garrett.jpg" />
+    <Content Include="images\Suns\goran_dragic.jpg" />
+    <Content Include="images\Suns\jared_dudley.jpg" />
+    <Content Include="images\Suns\jermaine_oneal.jpg" />
+    <Content Include="images\Suns\kendall_marshall.jpg" />
+    <Content Include="images\Suns\luis_scola.jpg" />
+    <Content Include="images\Suns\luke_zeller.jpg" />
+    <Content Include="images\Suns\marcin_gortat.jpg" />
+    <Content Include="images\Suns\markieff_morris.jpg" />
+    <Content Include="images\Suns\michael_beasley.jpg" />
+    <Content Include="images\Suns\pj_tucker.jpg" />
+    <Content Include="images\Suns\sebastian_telfair.jpg" />
+    <Content Include="images\Suns\shannon_brown.jpg" />
+    <Content Include="images\Suns\suns_logo.png" />
+    <Content Include="images\Suns\wesley_johnson.jpg" />
+    <Content Include="images\Thunder\daniel_orton.jpg" />
+    <Content Include="images\Thunder\deandre_liggins.jpg" />
+    <Content Include="images\Thunder\eric_maynor.jpg" />
+    <Content Include="images\Thunder\hasheem_thabeet.jpg" />
+    <Content Include="images\Thunder\jeremy_lamb.jpg" />
+    <Content Include="images\Thunder\kendrick_perkins.jpg" />
+    <Content Include="images\Thunder\kevin_durant.jpg" />
+    <Content Include="images\Thunder\kevin_martin.jpg" />
+    <Content Include="images\Thunder\nick_collison.jpg" />
+    <Content Include="images\Thunder\perry_jones.jpg" />
+    <Content Include="images\Thunder\reggie_jackson.jpg" />
+    <Content Include="images\Thunder\russell_westbrook.jpg" />
+    <Content Include="images\Thunder\serge_ibaka.jpg" />
+    <Content Include="images\Thunder\thabo_sefolosha.jpg" />
+    <Content Include="images\Thunder\thunder_logo.jpg" />
+    <Content Include="images\Timberwolves\alexey_shved.jpg" />
+    <Content Include="images\Timberwolves\andrei_kirilenko.jpg" />
+    <Content Include="images\Timberwolves\brandon_roy.jpg" />
+    <Content Include="images\Timberwolves\chase_budinger.jpg" />
+    <Content Include="images\Timberwolves\dante_cunningham.jpg" />
+    <Content Include="images\Timberwolves\derrick_williams.jpg" />
+    <Content Include="images\Timberwolves\greg_stiemsma.jpg" />
+    <Content Include="images\Timberwolves\jose_barea.jpg" />
+    <Content Include="images\Timberwolves\josh_howard.jpg" />
+    <Content Include="images\Timberwolves\kevin_love.jpg" />
+    <Content Include="images\Timberwolves\lou_amundson.jpg" />
+    <Content Include="images\Timberwolves\luke_ridnour.jpg" />
+    <Content Include="images\Timberwolves\malcolm_lee.jpg" />
+    <Content Include="images\Timberwolves\nikola_pekovic.jpg" />
+    <Content Include="images\Timberwolves\ricky_rubio.jpg" />
+    <Content Include="images\Timberwolves\timberwolves_logo.jpg" />
+    <Content Include="images\Warriors\andrew_bogut.jpg" />
+    <Content Include="images\Warriors\andris_biedrins.jpg" />
+    <Content Include="images\Warriors\brandon_rush.jpg" />
+    <Content Include="images\Warriors\carl_landry.jpg" />
+    <Content Include="images\Warriors\charles_jenkins.jpg" />
+    <Content Include="images\Warriors\david_lee.jpg" />
+    <Content Include="images\Warriors\draymond_green.jpg" />
+    <Content Include="images\Warriors\festus_ezeli.jpg" />
+    <Content Include="images\Warriors\harrison_barnes.jpg" />
+    <Content Include="images\Warriors\jarrett_jack.jpg" />
+    <Content Include="images\Warriors\jeremy_tyler.jpg" />
+    <Content Include="images\Warriors\kent_bazemore.jpg" />
+    <Content Include="images\Warriors\klay_thompson.jpg" />
+    <Content Include="images\Warriors\richard_jefferson.jpg" />
+    <Content Include="images\Warriors\stephen_curry.jpg" />
+    <Content Include="images\Warriors\warriors_logo.jpg" />
+    <Content Include="images\wcl.gif" />
+    <Content Include="js\data.js" />
+    <Content Include="js\default.js" />
+    <Content Include="js\fullData.js" />
+    <Content Include="js\navigator.js" />
+    <Content Include="pages\home\home.css" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\home\home.js" />
+    <Content Include="default.html" />
+    <Content Include="pages\searchedPlayers\searchedPlayers.css" />
+    <Content Include="pages\searchedPlayers\searchedPlayers.html" />
+    <Content Include="pages\searchedPlayers\searchedPlayers.js" />
+    <Content Include="pages\players\players.css" />
+    <Content Include="pages\players\players.html" />
+    <Content Include="pages\players\players.js" />
+    <Content Include="pages\teams\teams.css" />
+    <Content Include="pages\teams\teams.html" />
+    <Content Include="pages\teams\teams.js" />
+    <None Include="PictureAlbum_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
