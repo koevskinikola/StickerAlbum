@@ -1,0 +1,9 @@
+﻿.game p {
+    margin-left: 120px;
+}
+.Wrapper {
+    background-image: url('/images/desk_background.jpg'); 
+    height: 100%;
+    width: 100%; 
+    background-size: 100%;
+}
